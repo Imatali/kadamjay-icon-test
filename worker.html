@@ -1,1 +1,80 @@
 
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кадамжай ЖДПБ — PWA TEST</title>
+
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./pwa-icon-192.png">
+  <link rel="apple-touch-icon" href="./pwa-icon-192.png">
+  <meta name="theme-color" content="#1d4ed8">
+
+  <style>
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      background: #f1f5f9;
+      margin: 0;
+      padding: 20px;
+    }
+    .box {
+      background: white;
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px #0001;
+      text-align: center;
+    }
+    input, button {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 14px;
+      margin-top: 12px;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+    input { border: 1px solid #cbd5e1; }
+    button {
+      background: #94a3b8;
+      color: white;
+      border: 0;
+    }
+    .status {
+      color: #166534;
+      background: #dcfce7;
+      padding: 12px;
+      border-radius: 10px;
+      margin-top: 16px;
+    }
+    .note {
+      font-size: 13px;
+      color: #64748b;
+      margin-top: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h3>📍 Жумушка келдим</h3>
+    <p><strong>Кадамжай ЖДПБ GPS</strong></p>
+
+    <input type="tel" placeholder="4 орундуу PIN" disabled>
+    <button disabled>Кирүү</button>
+    <button disabled>📅 Графикти көрүү</button>
+
+    <div class="status">
+      ✅ PWA SAFE TEST
+    </div>
+
+    <p class="note">
+      Бул тесттик версияда Firebase, GPS жана PIN
+      текшерүү иштетилген эмес.
+      Негизги маалымат базасына эч нерсе жазылбайт.
+    </p>
+    <p class="note">v1116 — PWA тесттик интерфейс</p>
+  </div>
+</body>
+</html>
+
