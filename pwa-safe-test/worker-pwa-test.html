@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Катталуу</title>
+
+<link rel="manifest" href="./manifest-test.webmanifest">
+<meta name="theme-color" content="#1d4ed8">
+
+<meta property="og:title" content="Кадамжай ЖДПБ - Кирүү">
+<meta property="og:description" content="Жумушка келүүнү белгилөө">
+<meta property="og:image" content="https://imatali.github.io/gps-tracker/icon.png?v=1010">
+<meta property="og:type" content="website">
+<link rel="icon" href="icon.png?v=1010">
+<link rel="apple-touch-icon" href="./pwa-icon-192.png">
+
+
+<style>
+body {
+  font-family:system-ui,-apple-system,sans-serif;
+  background:#f1f5f9;
+  padding:16px;
+  margin:0;
+}
+.box {
+  background:#fff;
+  max-width:400px;
+  margin:20px auto;
+  padding:20px;
+  border-radius:16px;
+  box-shadow:0 4px 20px #0001;
+}
+input,button {
+  width:100%;
+  padding:14px;
+  margin-top:12px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  font-size:18px;
+  box-sizing:border-box;
+}
+button {
+  background:#1d4ed8;
+  color:#fff;
+  border:0;
+  font-weight:700;
+  cursor:pointer;
+}
+button:disabled {background:#94a3b8}
+button.out {
+  background:#ef4444;
+  display:none;
+  margin-top:16px;
+}
+#log {
+  font-size:13px;
+  background:#f8fafc;
+  padding:10px;
+  border-radius:8px;
+  margin-top:12px;
+  min-height:20px;
+  word-break:break-word;
+}
+.small-link {
+  display:block;
+  text-align:center;
+  margin-top:20px;
+  font-size:13px;
+  color:#64748b;
+  text-decoration:underline;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+<div class="box">
+  <h3 id="title">📍 Жумушка келдим</h3>
+
+  <input id="pin" type="tel" inputmode="numeric"
+         maxlength="4" placeholder="4 орундуу ПИН">
+
+  <button id="btn" onclick="login()">Кирүү</button>
+  <button id="previewBtn" type="button" onclick="previewSchedule()" style="background:#e0e7ff;color:#1e40af">📅 Графикти көрүү</button>
+
+  <div id="log">📅 Графикти GPSсиз көрүүгө болот.</div>
+  <div id="info"></div>
+  <div id="scheduleInfo" style="font-size:13px;background:#eff6ff;border-radius:8px;padding:10px;margin-top:12px;display:none"></div>
+
+  <button id="outBtn" class="out" onclick="leaveWork()">
+    🚪 Жумуштан кеттим
+  </button>
+
+   <div style="font-size:10px;color:#aaa;margin-top:12px;text-align:center">
+    v1116 GPS + Firebase + 7 күндүк график
+  </div>
+</div>
+
+
+<script>
+function login() {
+  alert('PWA SAFE TEST: Firebase жана PIN текшерүү өчүрүлгөн.');
+}
+function previewSchedule() {
+  alert('PWA SAFE TEST: График текшерүү режими.');
+}
+function leaveWork() {
+  alert('PWA SAFE TEST: Маалымат базасына жазылбайт.');
+}
+document.getElementById('log').textContent =
+  '✅ PWA SAFE TEST — Firebase жана GPS өчүрүлгөн.';
+</script>
+</body>
+</html>
