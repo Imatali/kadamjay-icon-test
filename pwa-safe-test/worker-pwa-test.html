@@ -111,5 +111,15 @@ function leaveWork() {
 document.getElementById('log').textContent =
   '✅ PWA SAFE TEST — Firebase жана GPS өчүрүлгөн.';
 </script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js')
+      .then(() => console.log('PWA SAFE TEST: Service Worker катталды'))
+      .catch(error => console.error('Service Worker катасы:', error));
+  });
+}
+</script>
 </body>
 </html>
