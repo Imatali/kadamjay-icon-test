@@ -2,7 +2,7 @@
   "id": "./",
   "name": "Кадамжай ЖДПБ GPS — TEST",
   "short_name": "Кадамжай TEST",
-  "start_url": "./index.html",
+  "start_url": "./worker.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f1f5f9",
