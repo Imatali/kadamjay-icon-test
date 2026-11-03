@@ -1,1 +1,56 @@
-<!doctype html><html lang="ky"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#1d4ed8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="ЖДПБ GPS"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="pwa-icon-192.png"><link rel="icon" href="pwa-icon-192.png"><title>ЖДПБ GPS — Иконка TEST</title><style>body{font-family:system-ui;background:#f1f5f9;text-align:center;padding:40px 18px;color:#0f172a}.card{max-width:420px;margin:auto;background:white;border-radius:20px;padding:25px;box-shadow:0 4px 20px #0001}img{width:110px}p{line-height:1.6}.safe{color:#166534;font-weight:bold}</style></head><body><main class="card"><img src="pwa-icon-192.png" alt="ЖДПБ GPS иконкасы"><h2>Кадамжай ЖДПБ GPS</h2><p class="safe">Иконка үчүн коопсуз TEST баракча</p><p>Бул баракча Firebase, PIN же GPS колдонбойт. Телефондун башкы экранына иконка кошууну гана текшерет.</p><p><b>Android:</b> Chrome → ⋮ → Башкы экранга кошуу / Install app.</p><p><b>iPhone:</b> Safari → Бөлүшүү → Add to Home Screen.</p></main></body></html>
+<!doctype html><html lang="ky"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#1d4ed8"><title>Кадамжай ЖДПБ GPS — PWA TEST</title><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./pwa-icon-192.png"><link rel="apple-touch-icon" href="./pwa-icon-192.png"><style>
+body {
+  font-family:system-ui,-apple-system,sans-serif;
+  background:#f1f5f9;
+  padding:16px;
+  margin:0;
+}
+.box {
+  background:#fff;
+  max-width:400px;
+  margin:20px auto;
+  padding:20px;
+  border-radius:16px;
+  box-shadow:0 4px 20px #0001;
+}
+input,button {
+  width:100%;
+  padding:14px;
+  margin-top:12px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  font-size:18px;
+  box-sizing:border-box;
+}
+button {
+  background:#1d4ed8;
+  color:#fff;
+  border:0;
+  font-weight:700;
+  cursor:pointer;
+}
+button:disabled {background:#94a3b8}
+button.out {
+  background:#ef4444;
+  display:none;
+  margin-top:16px;
+}
+#log {
+  font-size:13px;
+  background:#f8fafc;
+  padding:10px;
+  border-radius:8px;
+  margin-top:12px;
+  min-height:20px;
+  word-break:break-word;
+}
+.small-link {
+  display:block;
+  text-align:center;
+  margin-top:20px;
+  font-size:13px;
+  color:#64748b;
+  text-decoration:underline;
+  cursor:pointer;
+}
+</style></head><body><div class="box"><h3>📍 Кадамжай ЖДПБ GPS</h3><p style="color:#166534;font-weight:700">PWA TEST — коопсуз демонстрация</p><p>Бул баракча негизги кызматкер интерфейсинин көрүнүшүн гана текшерет.</p><input placeholder="4 орундуу ПИН — тестте өчүрүлгөн" disabled><button disabled>Кирүү — тестте өчүрүлгөн</button><button disabled>📅 График — тестте өчүрүлгөн</button><div id="log">Firebase, GPS, PIN, келүү-кетүү функциялары бул TEST баракчада иштебейт. Маалымат жазылбайт.</div><p style="font-size:12px;color:#64748b">PWA коопсуз тест v1</p></div></body></html>

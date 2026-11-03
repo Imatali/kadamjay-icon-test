@@ -1,15 +1,6 @@
-КАДАМЖАЙ GPS — ИКОНКА TEST (коопсуз)
+КООПСУЗ PWA TEST
 
-Бул пакет Firebase, GPS, PIN же кызматкерлердин маалыматтарын колдонбойт.
-PRODUCTION'го жүктөбөңүз.
-
-Текшерүү үчүн өзүнчө жаңы GitHub репозиторий түзүңүз, мисалы kadamjay-icon-test.
-Төрт файлды ошол репозиторийдин түпкү папкасына жүктөңүз:
-index.html, manifest.webmanifest, pwa-icon-192.png, pwa-icon-512.png.
-Settings -> Pages -> Deploy from a branch -> main / (root) -> Save.
-GitHub Pages даяр болгондо, анын HTTPS дарегин телефонуңузда ачыңыз.
-Android Chrome: меню -> Add to Home screen / Install app.
-iPhone Safari: Share -> Add to Home Screen.
-Иконканы басып, TEST баракча ачылганын көрүңүз.
-
-ЭСКЕРТҮҮ: Компьютерден index.html файлын түз ачып (file://) PWA орнотууну толук текшере албайсыз. HTTPS керек.
+Бул файлдарды өзүнчө тесттик GitHub Pages репозиторийине гана жүктөңүз.
+Негизги gps-tracker репозиторийине жүктөбөңүз.
+TEST баракчасы Firebase, GPS же PIN колдонбойт жана эч нерсе жазбайт.
+Android Chrome аркылуу сайтты ачып, «Установить» деп орнотуңуз.
